@@ -1,5 +1,3 @@
-<snippet>
-  <content><![CDATA[
 # ${1:Project Name}
 
 TODO: Write a project description
@@ -9,8 +7,7 @@ TODO: Write a project description
 TODO: Describe the installation process
 
 ## Usage
-
-TODO: Write usage instructions
+skippy.py <RUNDIRECTORY>
 
 ## Contributing
 
@@ -22,7 +19,7 @@ TODO: Write usage instructions
 
 ## History
 
-TODO: Write history
+v0.1: Initial design
 
 ## Credits
 
@@ -31,6 +28,14 @@ TODO: Write credits
 ## License
 
 TODO: Write license
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+
+
+# specification/requirements
+## load data
+parse all metrics file in directory (picard2json)
+extract runlogs (sqlite2json)
+aggregate data and store (aggregatejson,json2mongo)
+archive run (archiveRun)
+cleanup (cleanupRun)
+## query engine
+Simple webpage?

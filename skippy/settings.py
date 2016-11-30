@@ -15,6 +15,8 @@ class Config(object):
     DEBUG_TB_INTERCEPT_REDIRECTS = False
     CACHE_TYPE = 'simple'  # Can be "memcached", "redis", etc.
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SEQDATA_PATH = "/path/to/sequencing/runs"
+    ANALYSIS_PATH = "/path/to/analysis/folder"
 
 
 class ProdConfig(Config):

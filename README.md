@@ -31,10 +31,20 @@ TODO: Write license
 
 
 # specification/requirements
-## load data
+## parse QC data
 parse all metrics file in directory (picard2json)
+- use Crimson
+- custom parser for failing files (picard2json)
 extract runlogs (sqlite2json)
-aggregate data and store (aggregatejson,json2mongo)
+- own function
+Extract BCL2FASTQ stats
+- From BaseSpace?
+- XML2JSON
+Add Flagstat
+- crimson
+## aggregate data and store (aggregatejson,json2mongo)
+- loader by directory
+##
 archive run (archiveRun)
 cleanup (cleanupRun)
 ## query engine
